@@ -1,0 +1,25 @@
+GET http://localhost:8000/BankAccounts
+
+###
+GET http://localhost:8000/BankAccounts/6542e550b37abda0de61f381
+
+###
+POST http://localhost:8000/BankAccounts/
+Content-Type: application/json
+
+{
+    "name": "Pedro",
+    "balance": 122220
+}
+
+###
+DELETE http://localhost:8000/BankAccounts/6542d8ab976677e52c4e97cd
+
+###
+PUT http://localhost:8000/BankAccounts/6542e550b37abda0de61f381
+Content-Type: application/json
+
+{
+    "name": "Josias",
+    "balance": 122111
+}
